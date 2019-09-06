@@ -25,3 +25,17 @@ class Credintials:
         '''
 
         Credintials.credintials_list.remove(self)   
+    @classmethod
+    def find_by_name(cls,name):
+        '''
+        Method that takes in a name and returns a credintials that matches that name.
+
+        Args:
+            name: name to search for
+        Returns :
+            Credintials of person that matches the name.
+        '''
+
+        for credintials in cls.credintials_list:
+            if credintials.user_name == name:
+                return credintials
