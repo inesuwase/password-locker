@@ -43,6 +43,12 @@ if __name__ == '__main__':
         '''
         self.new_credintials.test_save_credintials() # saving the new credintials
         self.assertEqual(len(Credintials.credintials_list),1)
+    def tearDown(self):
+            '''
+            tearDown method that does clean up after each test case test has run.
+            '''
+            Credintials.credintials_list=[]
+
 
 if __name__ ==  '__main__':
     unittest.main()
