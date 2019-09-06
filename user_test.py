@@ -1,5 +1,5 @@
 import unittest # Importing the unittest module
-from user import User # Importing the contact class
+from password import User # Importing the contact class
 
 class TestUser(unittest.TestCase):
 
@@ -13,7 +13,7 @@ class TestUser(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_user = User("James","Muriuki","0712345678","james@ms.com","James","mine") # create contact object
+        self.new_password = User("James","mine") # create password object
 
 
     def test_init(self):
@@ -21,13 +21,20 @@ class TestUser(unittest.TestCase):
         test_init test case to test if the object is initialized properly
         '''
 
-        self.assertEqual(self.new_password.first_name,"James")
-        self.assertEqual(self.new_password.last_name,"Muriuki")
-        self.assertEqual(self.new_password.phone_number,"0712345678")
-        self.assertEqual(self.new_password.email,"james@ms.com")
+       
         self.assertEqual(self.new_password.user_name,"James")
         self.assertEqual(self.new_password.password,"mine")
 
 
 if __name__ == '__main__':
+    unittest.main()
+    def test_save_password(self):
+        '''
+        test_save_password test case to test if the password object is saved into
+         the password list
+        '''
+        self.new_password.test_save_password() # saving the new password
+        self.assertEqual(len(User.password_list),1)
+
+if __name__ ==  '__main__':
     unittest.main()
