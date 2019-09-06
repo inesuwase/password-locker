@@ -56,6 +56,18 @@ class TestCredintials(unittest.TestCase):
 
             self.new_credintials.test_delete_credintials()# Deleting a credintials object
             self.assertEqual(len(Credintials.credintials_list),1)
+    def test_find_credintials_by_user_name(self):
+        '''
+        test to check if we can find a credintials by user_name and display information
+        '''
+
+        self.new_credintials.save_credintials()
+        test_credintials = Credintials("twitter","Test","test@user.com") # new credintials
+        test_credintials.save_credintials()
+
+        found_credintials = Credintials.find_by_name("test")
+
+        self.assertEqual(found_credintials.password,test_contact.password)
     
 
 
