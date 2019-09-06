@@ -44,7 +44,7 @@ class TestCredintials(unittest.TestCase):
             '''
             self.new_credintials.save_credintials()
             test_save_credintials = Credintials("twitter","Test","test@user.com") # new credintials
-            test_save_credintials.test_save_credintials()
+            test_save_credintials.save_credintials()
             self.assertEqual(len(Credintials.credintials_list),2)
 
 
