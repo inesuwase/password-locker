@@ -46,6 +46,16 @@ class TestCredintials(unittest.TestCase):
             test_save_credintials = Credintials("twitter","Test","test@user.com") # new credintials
             test_save_credintials.save_credintials()
             self.assertEqual(len(Credintials.credintials_list),2)
+     def test_delete_credintials(self):
+            '''
+            test_delete_credintials to test if we can remove a credintials from our credintials list
+            '''
+            self.new_credintials.save_credintials()
+            test_save_credintials = Credintials("twitter","Test","test@user.com") # new credintials
+            test_save_credintials.save_credintials()
+
+            self.new_credintials.test_delete_credintials()# Deleting a credintials object
+            self.assertEqual(len(Credintials.credintials_list),1)
 
 
 
