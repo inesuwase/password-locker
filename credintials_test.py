@@ -1,10 +1,10 @@
 import unittest # Importing the unittest module
-from credintials import Credintials # Importing the contact class
+from credintials import Credintials # Importing the credintials class
 
 class TestCredintials(unittest.TestCase):
 
     '''
-    Test class that defines test cases for the credintials class behaviours.
+    Test class that defines test cases for the cledintials class behaviours.
 
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
@@ -13,7 +13,7 @@ class TestCredintials(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_credintials = Credintials("facebook.com","James","mine") # create credintials object
+        self.new_credintials = Credintials("facebook",James","mine") # create credintials object
 
 
     def test_init(self):
@@ -22,20 +22,9 @@ class TestCredintials(unittest.TestCase):
         '''
 
        
-        self.assertEqual(self.new_credintials.account_name,"facebook.com")
+        self.assertEqual(self.new_credintials.account_name,"facebook")
         self.assertEqual(self.new_credintials.user_name,"James")
         self.assertEqual(self.new_credintials.password,"mine")
-
-
-if __name__ == '__main__':
-    unittest.main()
-    def test_save_credintials(self):
-        '''
-        test_save_password test case to test if the password object is saved into
-         the passwordlist
-        '''
-        self.new_password.test_save_password() # saving the new credintials
-        self.assertEqual(len(Credintials.password_list),1)
     def test_save_credintials(self):
         '''
         test_save_credintials test case to test if the credintials object is saved into
@@ -44,22 +33,22 @@ if __name__ == '__main__':
         self.new_credintials.test_save_credintials() # saving the new credintials
         self.assertEqual(len(Credintials.credintials_list),1)
     def tearDown(self):
-        '''
-        tearDown method that does clean up after each test case test has run.
-        '''
-        Credintials.credintials_list=[]
+            '''
+            tearDown method that does clean up after each test case test has run.
+            '''
+            Credintials.credintials_list=[]
     def test_save_multiple_credintials(self):
             '''
             test_save_multiple_credintials to check if we can save multiple credintials
             objects to our credintials_list
             '''
-            self.new_credintials.save_credintials()
-            test_save_credintials = Credintials("twitter","mine","test@user.com") # new credintials
-            test_save_credintials.save_credintials()
+            self.new_credintials.test_save_credintials()
+            test_save_credintials = Credintials("twitter","Test","test@user.com") # new credintials
+            test_save_credintials.test_save_credintials()
             self.assertEqual(len(Credintials.credintials_list),2)
 
 
 
-if __name__ ==  '__main__':
-    unittest.main()
-   
+
+if __name__ == '__main__':
+     unittest.main()
