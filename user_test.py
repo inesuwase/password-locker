@@ -26,15 +26,15 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_password.password,"mine")
 
 
-# if __name__ == '__main__':
-#     unittest.main()
-#     def test_save_password(self):
-#         '''
-#         test_save_password test case to test if the password object is saved into
-#          the password list
-#         '''
-#         self.new_password.test_save_password() # saving the new password
-#         self.assertEqual(len(User.password_list),1)
+if __name__ == '__main__':
+    unittest.main()
+    def test_save_password(self):
+        '''
+        test_save_password test case to test if the password object is saved into
+         the password list
+        '''
+        self.new_password.test_save_password() # saving the new password
+        self.assertEqual(len(User.password_list),1)
 
-# if __name__ ==  '__main__':
-#     unittest.main()
+if __name__ ==  '__main__':
+    unittest.main()
