@@ -24,7 +24,7 @@ class Credintials:
         delete_credintials method deletes a saved credintials from the credintials_list
         '''
 
-        Credintials.credintials_list.remove(self)   
+        Credintials.credintials_list.remove(self) 
     @classmethod
     def find_by_name(cls,name):
         '''
@@ -38,4 +38,4 @@ class Credintials:
 
         for credintials in cls.credintials_list:
             if credintials.user_name == name:
-                return credintials
+                return credintials  
