@@ -13,7 +13,7 @@ class TestCredintials(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_credintials = Credintials("facebook",James","mine") # create credintials object
+        self.new_credintials = Credintials("facebook","James","mine") # create credintials object
 
 
     def test_init(self):
