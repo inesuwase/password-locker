@@ -29,13 +29,21 @@ class TestCredintials(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-#     def test_save_password(self):
-#         '''
-#         test_save_password test case to test if the password object is saved into
-#          the passwordlist
-#         '''
-#         self.new_password.test_save_password() # saving the new password
-#         self.assertEqual(len(Credintials.password_list),1)
+    def test_save_credintials(self):
+        '''
+        test_save_password test case to test if the password object is saved into
+         the passwordlist
+        '''
+        self.new_password.test_save_password() # saving the new credintials
+        self.assertEqual(len(Credintials.password_list),1)
+    def test_save_credintials(self):
+        '''
+        test_save_credintials test case to test if the credintials object is saved into
+         the credintials list
+        '''
+        self.new_credintials.test_save_credintials() # saving the new credintials
+        self.assertEqual(len(Credintials.credintials_list),1)
 
-# if __name__ ==  '__main__':
-#     unittest.main()
+if __name__ ==  '__main__':
+    unittest.main()
+   
