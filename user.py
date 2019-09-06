@@ -2,10 +2,15 @@ class User:
     """
     Class that generates new instances of user.
     """
-    user_list = [] # Empty user list
 
+    user_list = [] # Empty user list
     def __init__(self,user_name,password):
-       def save_user(self):
+      # docstring removed for simplicity
+
+
+        self.user_name = user_name
+        self.password = password
+    def save_user(self):
 
         '''
         save_user method saves user objects into user_list
@@ -13,8 +18,4 @@ class User:
 
         User.user_list.append(self)
 
-      # docstring removed for simplicity
-
-
-        self.user_name = user_name
-        self.password = password
+      
