@@ -22,7 +22,7 @@ class TestCredintials(unittest.TestCase):
         '''
 
        
-        self.assertEqual(self.new_credintials.email,"facebook.com")
+        self.assertEqual(self.new_credintials.account_name,"facebook.com")
         self.assertEqual(self.new_credintials.user_name,"James")
         self.assertEqual(self.new_credintials.password,"mine")
 
