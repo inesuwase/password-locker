@@ -17,4 +17,11 @@ class Credintials:
         save_credintials method saves ucredintials objects into credintiala_list
         '''
 
-        Credintials.credintials_list.append(self)    
+        Credintials.credintials_list.append(self) 
+    def test_delete_credintials(self):
+
+        '''
+        delete_credintials method deletes a saved credintials from the credintials_list
+        '''
+
+        Credintials.credintials_list.remove(self)   
