@@ -56,7 +56,7 @@ class TestCredintials(unittest.TestCase):
 
             self.new_credintials.test_delete_credintials()# Deleting a credintials object
             self.assertEqual(len(Credintials.credintials_list),1)
-     def test_delete_credintials(self):
+    def test_delete_credintials(self):
 
         '''
         delete_credintials method deletes a saved credintials from the credintials_list
