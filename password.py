@@ -14,3 +14,5 @@ class User:
         self.email = email
         self.user_name = user_name
         self.password = password
+class Credintials:
+  
