@@ -53,9 +53,9 @@ if __name__ == '__main__':
             test_save_multiple_credintials to check if we can save multiple credintials
             objects to our credintials_list
             '''
-            self.new_credintials.test_save_credintials()
-            test_save_credintials = Credintials("Test","user","John","test@user.com") # new credintials
-            test_save_credintials.test_save_credintials()
+            self.new_credintials.save_credintials()
+            test_save_credintials = Credintials("twitter","mine","test@user.com") # new credintials
+            test_save_credintials.save_credintials()
             self.assertEqual(len(Credintials.credintials_list),2)
 
 
