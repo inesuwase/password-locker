@@ -30,7 +30,7 @@ class TestCredintials(unittest.TestCase):
         test_save_credintials test case to test if the credintials object is saved into
          the credintials list
         '''
-        self.new_credintials.test_save_credintials() # saving the new credintials
+        self.new_credintials.save_credintials() # saving the new credintials
         self.assertEqual(len(Credintials.credintials_list),1)
     def tearDown(self):
             '''
@@ -42,7 +42,7 @@ class TestCredintials(unittest.TestCase):
             test_save_multiple_credintials to check if we can save multiple credintials
             objects to our credintials_list
             '''
-            self.new_credintials.test_save_credintials()
+            self.new_credintials.save_credintials()
             test_save_credintials = Credintials("twitter","Test","test@user.com") # new credintials
             test_save_credintials.test_save_credintials()
             self.assertEqual(len(Credintials.credintials_list),2)
