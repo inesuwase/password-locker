@@ -48,6 +48,16 @@ if __name__ == '__main__':
         tearDown method that does clean up after each test case test has run.
         '''
         Credintials.credintials_list=[]
+    def test_save_multiple_credintials(self):
+            '''
+            test_save_multiple_credintials to check if we can save multiple credintials
+            objects to our credintials_list
+            '''
+            self.new_credintials.test_save_credintials()
+            test_save_credintials = Credintials("Test","user","John","test@user.com") # new credintials
+            test_save_credintials.test_save_credintials()
+            self.assertEqual(len(Credintials.credintials_list),2)
+
 
 
 if __name__ ==  '__main__':
